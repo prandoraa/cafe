@@ -1,0 +1,167 @@
+ @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Ubuntu:wght@300&display=swap');
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    
+}
+
+body{
+    background: #d75f277d url(img/cafebg.jpg);
+    background-size: 100vh;
+    background-size: 100vw;
+}
+
+.tab {
+    background: #9f3200c4;
+    padding: 5px;
+    font-size: 1.7em;
+    font-family: 'Belanosima', sans-serif;
+}
+
+.menu {display: inline;}
+
+.lin{display: inline-block;
+    margin: 10px;
+    border: 5px solid;
+    border-left: 10px solid;
+    border-right: 10px solid;
+    border-color: transparent;
+}
+
+.lin:hover{
+    background: #fe784f;
+    border-radius: 5px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.cafein{ 
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    width: 180px;
+    display: none;
+    padding-left: 12px;
+    background-color: #ed815f;
+    border-radius: 5px;
+}
+
+.prod{
+    display: block;
+    background: #9c431e;
+}
+
+#prod{color: #ffd1e3;}
+
+.prod:hover{
+    background: #ed815f;}
+.prod:hover #prod{color:#5c1e31;}
+
+
+.lin:hover .cafein{
+    display: block;
+    opacity: 1;
+    
+}
+
+#join{
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+    display: inline;
+    border: 5px solid;
+    border-left: 10px solid;
+    border-right: 10px solid;
+    border-color: transparent;
+}
+#join:hover{background: #fe784f;
+    border-radius: 9px;}
+
+
+#menuban{
+    display:in-line block;
+    box-sizing: border-box;
+    float:left;
+    height: 100vh;
+}
+
+/*quadradinho de texto que precisa ir pro lado da imagem*/
+#titulo{
+    display: in-line;
+    box-sizing: border-box;
+    margin-left: 30%;
+    margin-right: 5%;
+    margin-top: 5%;
+    color: #fe784f;
+    font-family: 'Ubuntu', sans-serif;
+    float:top;
+}
+#textinho{
+    display: in-line;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-left: 30%;
+    margin-right: 5%;
+    margin-top: 0;
+    color: #ffb6a1;
+    background: #3f1501c4;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+    float:top;
+}
+
+/*botão xícara de café*/
+.card{
+    display: inline-block;
+    margin: 2%;
+    padding: 4%;
+}
+#cof{
+    width: 100px;
+    height: 100px;
+}
+
+.card .frente{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+    transition: all .4s linear;
+}
+
+.card .fundo{
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .4s linear;
+}
+
+.card:hover .frente{
+    transform: rotateY(-180deg);
+    cursor: pointer;
+}
+
+.card:hover .fundo{
+    transform: rotateY(0deg);
+    cursor: pointer;
+}
+
+.card .fundo img{
+    filter:contrast(10%);
+}
+
+.cbtn{
+    background: #9c431e;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    bottom: 120px;
+    opacity: .7;
+    text-align: center;
+}
